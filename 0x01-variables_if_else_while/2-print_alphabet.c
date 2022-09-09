@@ -7,23 +7,17 @@
 int main(void)
 {
 /*C program that prints alphabets in lowercase letters*/
-	/*setting sarting and ending points*/
-	char begin = 'a';
-	char end = 'z';
-	char lastAlph = 'z';
-
-	/*initiliaze gothrough with begin alphabet*/
-	char gothrough = begin;
+	/*initialize*/
+	char gothrough;
 
 	/*print out characters from the initial value of gothrough*/
-	while (gothrough != end)
+	for (gothrough = 'a' ; gothrough <= 'z' ; gothrough++)
 	{
 		putchar(gothrough);
-		gothrough++;
 	}
 
-	/*prints out the last alphabet*/
-		putchar(lastAlph);
+	/*prints out the newline*/
+		putchar('\n');
 
 	return (0);
 }
