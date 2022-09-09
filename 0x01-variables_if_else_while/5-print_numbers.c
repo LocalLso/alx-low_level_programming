@@ -12,7 +12,7 @@ int main(void)
 
 	for (singleDigNum = 0 ; singleDigNum < 10 ; singleDigNum++)
 	{
-		printf("%d", singleDigNum);
+		printf("%d\n", singleDigNum);
 	}
 
 	return (0);
