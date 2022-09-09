@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-/* main -Entry point*/
-/* betty style doc for function main goes there */
+/**
+ * more headers goes there
+ * main -Entry point
+ * betty style doc for function main goes there 
+ */
 int main(void)
 {
-/*This program assigns a random number to a variable n*/
+/*C program that assigns a random number to a variable n*/
 	int n;
 
 	srand(time(0));
@@ -22,7 +24,7 @@ int main(void)
 	}
 	else
 	{
-		printf("%d is negative", n);
+		printf("%d is negative\n", n);
 	}
 
 	return (0);
