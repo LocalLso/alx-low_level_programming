@@ -14,7 +14,7 @@ int main(void)
 	/*print out characters from the initial value of gothrough*/
 	for (gothrough = 'a' ; gothrough <= 'z' ; gothrough++)
 	{
-		putchar(gothrough)
+		putchar(gothrough);
 	}
 	for (gothrough1 = 'A' ; gothrough1 <= 'Z' ; gothrough1++)
 	{
