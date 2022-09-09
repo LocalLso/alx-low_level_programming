@@ -19,7 +19,7 @@ int main(void)
 		else if (ch == 'q')
 		{
 			ch = 'r';
-		}	
+		}
 		putchar(ch);
 	}
 
