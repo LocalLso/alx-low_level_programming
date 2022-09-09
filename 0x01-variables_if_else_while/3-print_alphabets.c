@@ -12,13 +12,13 @@ int main(void)
 	char gothrough1;
 
 	/*print out characters from the initial value of gothrough*/
-	for (gothrough = 'A' ; gothrough <= 'Z' ; gothrough++)
+	for (gothrough = 'a' ; gothrough <= 'z' ; gothrough++)
 	{
-		for (gothrough1 = 'a' ; gothrough1 <= 'z' ; gothrough1++)
-		{
-			putchar(gothrough1);
-			putchar(gothrough);
-		}
+		putchar(gothrough)
+	}
+	for (gothrough1 = 'A' ; gothrough1 <= 'Z' ; gothrough1++)
+	{
+		putchar(gothrough1);
 	}
 
 	/*prints out the newline*/
