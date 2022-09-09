@@ -12,8 +12,9 @@ int main(void)
 
 	for (singleDigNum = 0 ; singleDigNum < 10 ; singleDigNum++)
 	{
-		printf("%d", singleDigNum"\n");
+		printf("%d", singleDigNum);
 	}
-
+	
+	printf("\n");
 	return (0);
 }
