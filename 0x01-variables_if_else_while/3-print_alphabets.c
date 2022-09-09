@@ -16,9 +16,9 @@ int main(void)
 	{
 		for (gothrough1 = 'A' ; gothrough1 <= 'Z' ; gothrough++)
 		{
-			putchar(gothrough);
 			putchar(gothrough1);
 		}
+		putchar(gothrough);
 	}
 
 	/*prints out the newline*/
