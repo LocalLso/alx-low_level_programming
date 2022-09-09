@@ -14,7 +14,7 @@ int main(void)
 	{
 		printf("%d", singleDigNum);
 	}
-	
+
 	printf("\n");
 	return (0);
 }
