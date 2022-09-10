@@ -10,7 +10,7 @@ int main(void)
 	/*initialize variables*/
 	char reverse;
 
-	for (reverse = 'z' ; reverse <= 'a' ; reverse--)
+	for (reverse = 'z' ; reverse => 'a' ; reverse--)
 	{
 		putchar(reverse);
 	}
