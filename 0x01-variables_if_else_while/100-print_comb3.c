@@ -8,16 +8,16 @@ int main(void)
 {
 /*C program that prints all possible different comb of two digits*/
 	int d1;
-	int d2;
+	/*int d2;*/
 
 	for (d1 = 0 ; d1 <= 8 ; d1++)
 	{
 		putchar((d1 % 10) + '0');
 		if (d1 == 0)
-		for (d2 = 1 ; d2 <= 9 ; d2++)
+		/*for (d2 = 1 ; d2 <= 9 ; d2++)*/
 			continue;
 
-		else if (d1 == 1)
+		/*else if (d1 == 1)
 		for (d2 = 2 ; d2 <= 9 ; d2++)
 			continue;
 
@@ -49,7 +49,7 @@ int main(void)
 		for (d2 = 9 ; d2 <= 9 ; d2++)
 			continue;
 
-		putchar((d2 % 10) + '0');
+		putchar((d2 % 10) + '0');*/
 		putchar(',');
 		putchar(' ');
 	}
