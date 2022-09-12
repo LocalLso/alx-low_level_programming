@@ -14,7 +14,7 @@ int main(void)
 		{
 		for (d3 = 0 ; d3 <= 9 ; d3++)
 		{
-		for (d4 = 0 ; d4 <= 9 ; d4++)
+		for (d4 = 1 ; d4 <= 9 ; d4++)
 		{
 			putchar((d1 % 10) + '0');
 			putchar((d2 % 10) + '0');
