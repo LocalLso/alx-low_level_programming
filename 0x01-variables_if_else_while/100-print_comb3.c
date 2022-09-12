@@ -8,7 +8,7 @@ int main(void)
 {
 /*C program that prints all possible different comb of two digits*/
 	int d1;
-	/*int d2;*/
+	int d2;
 
 	for (d1 = 0 ; d1 <= 8 ; d1++)
 	{
