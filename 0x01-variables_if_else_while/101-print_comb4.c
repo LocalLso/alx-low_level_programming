@@ -22,7 +22,7 @@ int main(void)
 				{
 					continue;
 				}
-				else if (d1 > d2 && d2 > d3 && d1 > d3)
+				else if (d1 > d2 && d1 > d3 && d2 > d3)
 				{
 					continue;
 				}
