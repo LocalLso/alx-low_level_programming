@@ -30,7 +30,7 @@ int main(void)
 				{
 					continue;
 				}
-				else if (d2 < d3)
+				else if (d2 > d3)
 				{
 					continue;
 				}
