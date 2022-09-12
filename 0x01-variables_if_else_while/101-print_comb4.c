@@ -18,11 +18,11 @@ int main(void)
 		{
 			for (d3 = 2 ; d3 <= 9 ; d3++)
 			{
-				if (d1 == d2 && d1 == d3)
+				if (d1 == d2 && d1 == d3 && d2 == d3)
 				{
 					continue;
 				}
-				else if (d1 > d2 && d2 > d3)
+				else if (d1 > d2 && d2 > d3 && d1 > d3)
 				{
 					continue;
 				}
