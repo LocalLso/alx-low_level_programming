@@ -1,16 +1,12 @@
 #include <stdio.h>
 /**
  * main - Entry point
- *
+ * A C program that prints all possible combinations of three digits
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-/*C program that prints all different combinations of three digits*/
-	/*initialize variaables*/
-	int d1;
-	int d2;
-	int d3;
+	int d1, int d2,	int d3;
 
 	for (d1 = 0 ; d1 <= 7 ; d1++)
 	{
