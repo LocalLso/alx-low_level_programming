@@ -14,7 +14,7 @@ int main(void)
 		{
 		for (d3 = 0 ; d3 <= 9 ; d3++)
 		{
-		for (d4 = 1 ; d4 <= 9 ; d4++)
+		for (d4 = 0 ; d4 <= 9 ; d4++)
 		{
 		if (d1 == d2 && d2 == d3 && d2 == d4 && d1 == d4)
 		{
