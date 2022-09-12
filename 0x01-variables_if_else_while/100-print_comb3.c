@@ -26,9 +26,11 @@ int main(void)
 			{
 				putchar((d1 % 10) + '0');
 				putchar((d2 % 10) + '0');
-				putchar(',');
-				putchar(' ');
+				/*putchar(','};*/
+				/*putchar(' ');*/
 			}
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
