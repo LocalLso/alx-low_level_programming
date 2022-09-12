@@ -14,10 +14,17 @@ int main(void)
 	{
 		for (d2 = 1 ; d2 <= 9 ; d2++)
 		{	
-			putchar((d1 % 10) + '0');
-			putchar((d2 % 10) + '0');
-			putchar(',');
-			putchar(' ');
+			if (d1 == d2 || d2 == d1)
+			{
+				continue;
+			}
+			else
+			{
+				putchar((d1 % 10) + '0');
+				putchar((d2 % 10) + '0');
+				putchar(',');
+				putchar(' ');
+			}
 		}
 
 		/*else if (d1 == 1)
