@@ -30,6 +30,10 @@ int main(void)
 				{
 					continue;
 				}
+				else if (d2 < d3)
+				{
+					continue;
+				}
 				else
 				{
 					putchar((d1 % 10) + '0');
