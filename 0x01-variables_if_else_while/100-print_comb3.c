@@ -22,16 +22,19 @@ int main(void)
 			{
 				continue;
 			}
-			else if (d1 == 8 && d2 == 9)
-			{
-				continue;
-			}
 			else
 			{
 				putchar((d1 % 10) + '0');
 				putchar((d2 % 10) + '0');
-				putchar(',');
-				putchar(' ');
+					if (d1 == 8 && d2 == 9)
+					{	
+						continue;
+					}
+					else
+					{
+						putchar(',');
+						putchar(' ');
+					}
 			}
 		}
 	}
