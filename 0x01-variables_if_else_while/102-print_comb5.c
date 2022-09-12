@@ -20,10 +20,10 @@ int main(void)
 		{
 			continue;
 		}
-		else if (d1 > d2 || d3 > d4 || d2 < d3)
+		/*else if (d1 > d2 || d3 > d4 || d2 < d3)
 		{
 			continue;
-		}
+		}*/
 			putchar((d1 % 10) + '0');
 			putchar((d2 % 10) + '0');
 			putchar(' ');
