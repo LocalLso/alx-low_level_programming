@@ -12,10 +12,12 @@ int main(void)
 
 	for (d1 = 0 ; d1 <= 8 ; d1++)
 	{
-		putchar((d1 % 10) + '0');
 
 		for (d2 = 1 ; d2 <= 9 ; d2++)
+			putchac((d1 % 10) + '0');
 			putchar((d2 % 10) + '0');
+			putchar(',');
+			putchar(' ');
 
 		/*else if (d1 == 1)
 		for (d2 = 2 ; d2 <= 9 ; d2++)
@@ -50,8 +52,6 @@ int main(void)
 			continue;
 
 		*/
-		putchar(',');
-		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
