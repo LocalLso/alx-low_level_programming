@@ -16,6 +16,10 @@ int main(void)
 		{
 		for (d4 = 1 ; d4 <= 9 ; d4++)
 		{
+		if (d1 == d2 && d2 == d3 && d2 == d4 && d1 == d4)
+		{
+			continue;
+		}
 			putchar((d1 % 10) + '0');
 			putchar((d2 % 10) + '0');
 			putchar(' ');
