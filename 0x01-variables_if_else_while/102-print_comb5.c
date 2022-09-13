@@ -20,7 +20,7 @@ int main(void)
 		{
 			continue;
 		}
-		else if ((d1 > d3 || d2 > d4) || (d1 == d3 && d2 == d4))
+		else if ((d1 > d3 || (d2 > d4 && d1 > d3)) || (d1 == d3 && d2 == d4))
 		{
 			continue;
 		}
