@@ -15,5 +15,6 @@ int print_sign(int n);
 int _abs(int a);
 int print_last_digit(int ld);
 void jack_bauer(void);
+void times_table(void);
 
 #endif /* MAIN_H_ */
