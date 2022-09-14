@@ -17,11 +17,21 @@ void times_table(void)
 	for (n = 0; n < 10; n++)
 	{
 		mul = m * n;
+		if (mul > 9)
+		{
+			_putchar('0' + mul);
+			_putchar(',');
+			_puthcar(' ');
+			_putchar(' ');
+		}
+		else
+		{
 		_putchar((mul / 10) + '0');
 		_putchar((mul % 10) + '0');
 		_putchar(',');
 		_putchar(' ');
 		_putchar(' ');
+		}
 	}
 	_putchar('\n');
 	}
