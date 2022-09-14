@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
+#include "main.h"
+
 /**
  * main - Entry point
  * C program that prints _putchar
@@ -7,13 +9,9 @@
  * _putchar writes character c to stdout
  * @c: is a character to print
  */
-int _putchar(char c);
-
 int main(void)
 {
-	char a = '_';
-
-	_putchar(a);
+	_putchar('_');
 	_putchar('p');
 	_putchar('u');
 	_putchar('t');
