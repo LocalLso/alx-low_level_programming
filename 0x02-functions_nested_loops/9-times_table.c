@@ -20,6 +20,7 @@ void times_table(void)
 		_putchar('0' + mul);
 		_putchar(',');
 		_putchar(' ');
+		_putchar(' ');
 	}
 	_putchar('\n');
 	}
