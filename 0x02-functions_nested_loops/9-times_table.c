@@ -37,14 +37,14 @@ void times_table(void)
 			_putchar((mul / 10) + '0');
 			_putchar((mul % 10) + '0');
 			}*/
-		else if ((mul < 10) && (n != 0))
-		{
-			_putchar(' ');
-			_putchar('0' + (mul % 10));
-		}
-		else
+		else if (mul >= 10)
 		{
 			_putchar((mul / 10) + '0');
+			_putchar((mul % 10) + '0');
+		}
+		else ((mul < 10) && (n != 0))
+		{
+			_putchar(' ');
 			_putchar((mul % 10) + '0');
 		}
 	}
