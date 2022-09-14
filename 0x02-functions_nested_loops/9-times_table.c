@@ -19,9 +19,15 @@ void times_table(void)
 		mul = m * n;
 		if (n == 9)
 		{
+			if (mul < 10)
+			{
 			_putchar('0' + mul);
+			}
+			else
+			{
 			_putchar((mul / 10) + '0');
 			_putchar((mul % 10) + '0');
+			}
 		}
 		else if (mul < 10)
 		{
