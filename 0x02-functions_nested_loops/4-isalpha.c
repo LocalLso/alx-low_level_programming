@@ -2,10 +2,10 @@
 #include <ctype.h>
 #include "main.h"
 /**
- * isalpha - prints alphabets
+ * _isalpha - prints alphabets
  * @c: The charater to print
  *
- * isalpha - Checks for character
+ * _isalpha - Checks for character, lowercase, and uppercase
  *
  * Return: On success 1
  * 0 otherwise
