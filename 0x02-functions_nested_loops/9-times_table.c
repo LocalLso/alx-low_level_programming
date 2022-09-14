@@ -22,7 +22,11 @@ void times_table(void)
 			_putchar(',');
 			_putchar(' ');
 		}
-		if (n == 9)
+		if ( n == 0)
+		{
+			_putchar('0');
+		}
+		/*if (n == 9)
 		{
 			if (mul < 10)
 			{
@@ -32,7 +36,7 @@ void times_table(void)
 			{
 			_putchar((mul / 10) + '0');
 			_putchar((mul % 10) + '0');
-			}
+			}*/
 		}
 		else if ((mul < 10) && (n != 0))
 		{
