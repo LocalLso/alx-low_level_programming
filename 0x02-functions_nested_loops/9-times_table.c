@@ -41,7 +41,6 @@ void times_table(void)
 		_putchar((mul / 10) + '0');
 		_putchar((mul % 10) + '0');
 		_putchar(',');
-		_putchar(' ');
 		}
 	}
 	_putchar('\n');
