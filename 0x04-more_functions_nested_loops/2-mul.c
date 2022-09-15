@@ -2,7 +2,7 @@
 
 /**
  * mul - multiplies integers
- * @a: integer a 
+ * @a: integer a
  * @b: integer b
  *
  * mul - multiplies two integers
