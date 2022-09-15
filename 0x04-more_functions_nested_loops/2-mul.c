@@ -6,13 +6,16 @@
  * @b: integer b
  *
  * mul - multiplies two integers
+ * Return: int result
  */
 
 int mul(int a, int b)
 {
-	/*int num1 = a, num2 = b, result;
+	int a;
+	int b;
+	int result;
 
-	result = num1 * num2;*/
+	result = a * b;
 
-	return (a * b);
+	return (result);
 }
