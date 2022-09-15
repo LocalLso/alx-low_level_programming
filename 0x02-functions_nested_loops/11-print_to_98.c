@@ -18,7 +18,6 @@ void print_to_98(int n)
 			if (nut == 98)
 			{
 			printf("%d\n", nut);
-			continue;
 			}
 			else
 			{
@@ -33,7 +32,6 @@ void print_to_98(int n)
 			if (nut == 98)
 			{
 				printf("%d\n", nut);
-				continue;
 			}
 			printf("%d, ", nut);
 		}
@@ -45,7 +43,6 @@ void print_to_98(int n)
 			if (nut == 98)
 			{
 				printf("%d\n", nut);
-				continue;
 			}
 			printf("%d, ", nut);
 		}
