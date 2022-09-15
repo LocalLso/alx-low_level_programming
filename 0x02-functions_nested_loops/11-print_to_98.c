@@ -9,22 +9,43 @@
  */
 void print_to_98(int n)
 {
-	int nut = n;
+	int nut;
 
 	if (n >= 0)
 	{
-		while (nut < 99)
+		for (nut = n; nut < 99; nut++)
 		{
+			if (nut == 98)
+			{
+			printf("%d\n", n);
+			continue;
+			}
+			else
+			{
 			printf("%d, \n", nut);
-			nut++;
+			}
+		}
+	}
+	else if (n > 99)
+	{
+		for (nut = n; nut > 98; nut--)
+		{
+			if (nut == 98){
+				printf("%d\n", nut);
+				continue;
+			}
+			printf("%d, \n", nut);
 		}
 	}
 	else
 	{
-		while (nut < 99)
+		for (nut = n; nut < 99; nut++)
 		{
+			if (nut == 98){
+				printf("%d\n", nut);
+				continue;
+			}
 			printf("%d, \n", nut);
-			nut++;
 		}
 	}
 }
