@@ -28,7 +28,7 @@ void print_to_98(int n)
 	}
 	else if (n > 99)
 	{
-		for (nut = n; nut > 98; nut--)
+		for (nut = n; nut > 98; --nut)
 		{
 			if (nut == 98)
 			{
