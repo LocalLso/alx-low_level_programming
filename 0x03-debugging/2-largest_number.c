@@ -42,5 +42,5 @@ int largest_number(int a, int b, int c)
 		largest = c;
 	else if (a >= 0 && b <= 0 && c <= 0)
 		largest = a;
-	return(largest); 
+	return (largest); 
 }
