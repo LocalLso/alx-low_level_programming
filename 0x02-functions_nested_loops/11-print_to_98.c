@@ -22,7 +22,7 @@ void print_to_98(int n)
 			}
 			else
 			{
-			printf("%d, \n", nut);
+			printf("%d, ", nut);
 			}
 		}
 	}
@@ -30,22 +30,24 @@ void print_to_98(int n)
 	{
 		for (nut = n; nut > 98; nut--)
 		{
-			if (nut == 98){
+			if (nut == 98)
+			{
 				printf("%d\n", nut);
 				continue;
 			}
-			printf("%d, \n", nut);
+			printf("%d, ", nut);
 		}
 	}
 	else
 	{
 		for (nut = n; nut < 99; nut++)
 		{
-			if (nut == 98){
+			if (nut == 98)
+			{
 				printf("%d\n", nut);
 				continue;
 			}
-			printf("%d, \n", nut);
+			printf("%d, ", nut);
 		}
 	}
 }
