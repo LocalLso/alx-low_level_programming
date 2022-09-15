@@ -14,37 +14,31 @@ void print_to_98(int n)
 	if (n > 0 && n < 99)
 	{
 		for (nut = n; nut < 99; nut++)
-		{
 			if (nut == 98)
 			{
-			printf("%d\n", nut);
+				printf("%d\n", nut);
+				continue;
 			}
-			else
-			{
 			printf("%d, ", nut);
-			}
-		}
 	}
 	else if (n > 98)
 	{
 		for (nut = n; nut > 97; nut--)
-		{
 			if (nut == 98)
 			{
 				printf("%d\n", nut);
+				continue;
 			}
 			printf("%d, ", nut);
-		}
 	}
 	else
 	{
 		for (nut = n; nut < 99; nut++)
-		{
 			if (nut == 98)
 			{
 				printf("%d\n", nut);
+				continue;
 			}
 			printf("%d, ", nut);
-		}
 	}
 }
