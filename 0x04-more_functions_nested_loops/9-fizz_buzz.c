@@ -10,33 +10,27 @@
 
 int main(void)
 {
-	int i, j, mul3, mul5;
+	int i;
 
 	for (i = 1; i < 101; i++)
 	{
-		for (j = 1; j < 101; j++)
-		{
-			mul3 = 3 * j;
-			mul5 = 5 * j;
-
-		if (i == mul3)
+		if ((i % 3) == 0)
 		{
 			printf("Fizz ");
 		}
-		else if (i == mul5)
+		else if ((i % 5) == 0)
 		{
 			printf("Buzz ");
 		}
-		else if (i == (mul3 && mul5))
+		else if (((i % 3) == 0) && ((i % 5) == 0))
 		{
 			printf("FizzBuzz ");
 		}
 		else
 		{
-			printf("%d\n", i);
+			printf("%d ", i);
 		}
 
-		}
 
 	}
 	printf("\n");
