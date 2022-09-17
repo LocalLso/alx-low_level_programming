@@ -17,28 +17,26 @@ int main(void)
 
 	for (i = 2; i < j; i++)
 	{
-	if ((i % 2) == 1)
+
+	if (((i == 2) || ((i % 2) == 1)))
 	{
-		k =  (j / i);
+		k = (j / i);
 		if ((j % k) == 0)
 		{
-		if ((k / i) == 1)
-		{
-		printf("This is the largest prime factor: %d\n", k);
+			if ((k / i) == 1)
+			{
+			printf("This is the largest prime factor: %d\n", k);
+			}
+		j = k;
 		}
 		else
 		{
-		j = k;
-		}
-		}
-		else 
-		{
-		continue;
+		break;
 		}
 	}
-	else 
+	else
 	{
-	continue;
+	break;
 	}
 	}
 	printf("\n");
