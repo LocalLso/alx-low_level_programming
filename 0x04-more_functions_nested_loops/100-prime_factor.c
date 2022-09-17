@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <math.h>
 
 /**
  * main - Entry point
@@ -12,33 +13,17 @@
 int main(void)
 {
 	int i;
-	int k;
-	long int j = 612852475143;
+	long j = 612852475143;
 
-	for (i = 2; i < j; i++)
+	for (i = (int) sqrt(j); i > 2; i++)
 	{
-
-	if (((i == 2) || ((i % 2) == 1)))
-	{
-		k = (j / i);
-		if ((j % k) == 0)
+		if (j % i == 0)
 		{
-			if ((k / i) == 1)
-			{
-			printf("This is the largest prime factor: %d\n", k);
-			}
-		j = k;
-		}
-		else
-		{
-		break;
+			printf("%d\n", i);
+			break;
 		}
 	}
-	else
-	{
-	break;
-	}
-	}
+
 	printf("\n");
 	return (0);
 }
