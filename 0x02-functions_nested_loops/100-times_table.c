@@ -16,7 +16,7 @@ void print_times_table(int n)
 	for (j = 0; j <= n; j++)
 	{
 		mul = i * j;
-	if (mul == 0)
+	if (j == 0)
 	{
 		_putchar('0');
 	}
@@ -26,10 +26,6 @@ void print_times_table(int n)
 		_putchar(' ');
 		_putchar(' ');
 		_putchar(' ');
-		if (mul == 0)
-		{
-			continue;
-		}
 		_putchar((mul % 10) + '0');
 	}
 	if ((mul >= 10) && (mul < 100))
