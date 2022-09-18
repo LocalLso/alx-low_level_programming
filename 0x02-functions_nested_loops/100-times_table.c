@@ -23,6 +23,7 @@ void print_times_table(int n)
 				if(mul > 100)
 				{
 					_putchar(' ');
+					continue;
 				}
 				_putchar(' ');
 				_putchar(' ');
