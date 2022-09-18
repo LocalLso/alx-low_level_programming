@@ -10,26 +10,26 @@
 
 int main(void)
 {
-	int i, sum, sum1, sumAll;
+	int i, a, b, sum, sum1, sumAll;
 
-	sumAll = 0;
+	sumAll = 0;i
 	sum = 0;
 	sum1 = 0;
 	for (i = 0; i < 1024; i++)
 	{
 		if ((i % 3) == 0)
 		{
-			sum + i;
+			a = sum + i;
 		}
 		else if ((i % 5) == 0)
 		{
-			sum1 + i;
+			b = sum1 + i;
 		}
 		else
 		{
 			continue;
 		}
-		sumAll = sum + sum1;
+		sumAll = a + b;
 	}
 	printf("%d\n", sumAll);
 	return (0);
