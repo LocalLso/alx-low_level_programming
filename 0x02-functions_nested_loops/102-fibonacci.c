@@ -10,16 +10,16 @@
 
 int main(void)
 {
-	int FN, FP1, FP2, i;
+	long FN, FP1, FP2, i;
 
-	FP1 = 0;
-	FP2 = 1;
+	FP0 = 0;
+	FP1 = 1;
 	for (i = 0; i < 50; i++)
 	{
-		FN = FP2 + FP1;
+		FN = FP1 + FP0;
 		printf("%d, ", FN);
-		FP2 = FN;
-		FP1 = FP2;
+		FP0 = FP0 + FP1;
+		FP1 = FN;
 	}
 	printf("\n");
 	return (0);
