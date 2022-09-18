@@ -19,7 +19,8 @@ int main(void)
 		FN = FP1 + FPO;
 		if (i == 49)
 		{
-			printf("%ld", FN);
+			printf("%ld\n", FN);
+			continue;
 		}
 		printf("%ld, ", FN);
 		FP1 = FPO;
