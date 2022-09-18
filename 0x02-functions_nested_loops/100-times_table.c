@@ -17,10 +17,6 @@ void print_times_table(int n)
 		{
 			mul = i * j;
 
-			if ((n < 0) || (n > 15))
-			{
-				continue;
-			}
 			if (j != 0)
 			{
 				_putchar(',');
@@ -29,7 +25,6 @@ void print_times_table(int n)
 			if (j == 0)
 			{
 				_putchar('0');
-	
 			}
 			else if (mul >= 10)
 			{
@@ -42,6 +37,8 @@ void print_times_table(int n)
 				_putchar((mul % 10) + '0');
 			}
 		}
+		if ((n < 0) || (n > 15))
+			continue;
 		_putchar('\n');
 		}
 }
