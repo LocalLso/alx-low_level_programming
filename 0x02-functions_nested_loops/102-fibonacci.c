@@ -13,7 +13,7 @@ int main(void)
 	int FN, FPO, FP1, i;
 
 	FPO = 1;
-	FP1 = 1;
+	FP1 = 0;
 	for (i = 0; i < 50; i++)
 	{
 		FN = FP1 + FPO;
