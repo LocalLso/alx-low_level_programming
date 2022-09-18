@@ -14,7 +14,7 @@ int main(void)
 
 	FPO = 0;
 	FP1 = 1;
-	for (i = 0; i < 50; i++)
+	for (i = 3; i < 50; i++)
 	{
 		FN = FP1 + FPO;
 		printf("%d, ", FN);
