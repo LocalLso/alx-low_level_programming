@@ -17,6 +17,10 @@ int main(void)
 	for (i = 0; i < 50; i++)
 	{
 		FN = FP1 + FPO;
+		if (i == 49)
+		{
+			printf("%ld", FN);
+		}
 		printf("%ld, ", FN);
 		FP1 = FPO;
 		FPO = FN;
