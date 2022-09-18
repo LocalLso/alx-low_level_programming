@@ -37,8 +37,6 @@ void print_times_table(int n)
 				_putchar((mul % 10) + '0');
 			}
 		}
-		if ((n < 0) || (n > 15))
-			continue;
 		_putchar('\n');
 		}
 }
