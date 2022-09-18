@@ -10,14 +10,21 @@
 
 int main(void)
 {
-	int i, a, b, sum, sum1, sumAll;
+	int i, a, b, c, sum, sum1, sum2, sumAll;
 
 	sumAll = 0;
 	sum = 0;
 	sum1 = 0;
+	a = 0;
+	b = 0;
+	c = 0;
 	for (i = 0; i < 1024; i++)
 	{
-		if ((i % 3) == 0)
+		if (((i % 3) == 0) && ((i % 5) == 0))
+		{
+			c = sum2 + i;
+		}
+		else if ((i % 3) == 0)
 		{
 			a = sum + i;
 		}
@@ -29,7 +36,7 @@ int main(void)
 		{
 			continue;
 		}
-		sumAll = a + b;
+		sumAll = a + b + c;
 	}
 	printf("%d\n", sumAll);
 	return (0);
