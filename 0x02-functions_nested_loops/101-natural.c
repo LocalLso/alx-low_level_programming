@@ -15,7 +15,7 @@ int main(void)
 	sumAll = 0;
 	sum = 0;
 	sum1 = 0;
-	sum2 = 0:
+	sum2 = 0;
 	a = 0;
 	b = 0;
 	c = 0;
