@@ -12,9 +12,9 @@ int main(void)
 {
 	int FN, FPO, FP1, i;
 
-	FPO = 0;
+	FPO = 1;
 	FP1 = 1;
-	for (i = 3; i < 50; i++)
+	for (i = 0; i < 50; i++)
 	{
 		FN = FP1 + FPO;
 		printf("%d, ", FN);
