@@ -10,31 +10,31 @@
 
 int main(void)
 {
-	int i, a, b, c, sumAll;
+	int i, sum0, sum1, sum2, sumAll;
 
 	sumAll = 0;
-	a = 0;
-	b = 0;
-	c = 0;
+	sum0 = 0;
+	sum1 = 0;
+	sum2 = 0;
 	for (i = 0; i < 1024; i++)
 	{
 		if (((i % 3) == 0) && ((i % 5) == 0))
 		{
-			c = c + i;
+			sum2 = sum2 + i;
 		}
 		else if ((i % 3) == 0)
 		{
-			a = a + i;
+			sum0 = sum0 + i;
 		}
 		else if ((i % 5) == 0)
 		{
-			b = b + i;
+			sum1 = sum1 + i;
 		}
 		else
 		{
 			continue;
 		}
-		sumAll = a + b + c;
+		sumAll = sum0 + sum1 + sum2;
 	}
 	printf("%d\n", sumAll);
 	return (0);
