@@ -32,6 +32,12 @@ void print_times_table(int n)
 				_putchar((mul  / 10) + '0');
 				_putchar((mul % 10) + '0');
 			}
+			else if (mul >= 100)
+			{
+				_putchar((mul / 100) + '0');
+				_putchar((mul / 10) + '0');
+				_putchar((mul % 10) + '0');
+			}
 			else if ((mul < 10) && (j != 0))
 			{
 				_putchar(' ');
