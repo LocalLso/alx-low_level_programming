@@ -27,7 +27,7 @@ void print_times_table(int n)
 			{
 				_putchar('0');
 			}
-			else if (mul >= 10)
+			else if ((mul >= 10) || (mul < 100))
 			{
 				_putchar((mul  / 10) + '0');
 				_putchar((mul % 10) + '0');
