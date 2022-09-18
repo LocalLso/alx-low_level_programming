@@ -10,13 +10,13 @@
 
 int main(void)
 {
-	int FN, FP0, FP1, i;
+	int FN, FPO, FP1, i;
 
-	FP0 = 0;
+	FPO = 0;
 	FP1 = 1;
 	for (i = 0; i < 50; i++)
 	{
-		FN = FP1 + FP0;
+		FN = FP1 + FPO;
 		printf("%d, ", FN);
 		FPO = FN;
 		FP1 = FPO;
