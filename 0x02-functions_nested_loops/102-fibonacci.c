@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	int FN, FP1, FP2, i,;
+	int FN, FP1, FP2, i;
 
 	FP1 = 0;
 	FP2 = 1;
