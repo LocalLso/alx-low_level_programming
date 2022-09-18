@@ -18,7 +18,7 @@ int main(void)
 	{
 		FN = FP1 + FP0;
 		printf("%d, ", FN);
-		FP0 = FN;
+		FPO = FN;
 		FP1 = FPO;
 	}
 	printf("\n");
