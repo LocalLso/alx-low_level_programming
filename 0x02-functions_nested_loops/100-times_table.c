@@ -20,6 +20,10 @@ void print_times_table(int n)
 			if (j != 0)
 			{
 				_putchar(',');
+				if(mul > 100)
+				{
+					_putchar(' ');
+				}
 				_putchar(' ');
 				_putchar(' ');
 			}
