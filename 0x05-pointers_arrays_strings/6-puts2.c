@@ -2,25 +2,22 @@
 
 /**
  * puts2 - reverses string
- * @s: pointeer of type char to print
+ * @str: pointeer of type char to print
  *
  * puts2 -  a function that reverses a string.
  * Return: Always 0.
  */
 
-void rev_string(char *s)
+void puts2(char *str)
 {
-	int i, j, k;
-	char c;
+	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
-	;
-	
-	k = i;
-	for (i--, j = 0; j < k / 2; i--, j++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		c = s[k];
-		s[k] = s[i];
-		s[i] = c;
+	if ((i % 2) == 0)
+	{
+		_putchar(str[i]);
 	}
+	}
+	_putchar('\n');
 }
