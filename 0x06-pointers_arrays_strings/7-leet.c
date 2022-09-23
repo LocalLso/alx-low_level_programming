@@ -11,7 +11,7 @@
 char *leet(char *s)
 {
 	char a[5] = {'4', '3', '0', '7', '1'};
-	char b[5][2] = {
+	char l[5][2] = {
 		{'a', 'A'}, {'e', 'E'}, {'o', 'O'}, {'t', 'T'}, {'l', 'L'}
 	};
 	int i, j;
@@ -20,7 +20,7 @@ char *leet(char *s)
 	{
 		for (j = 0; j <= 4, j++)
 		{
-			if (s[i] == b[j][0] || s[i] == b[j][1])
+			if (s[i] == l[j][0] || s[i] == l[j][1])
 			{
 				s[i] = a[j];
 			}
