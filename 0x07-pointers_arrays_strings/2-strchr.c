@@ -14,7 +14,7 @@
 char *_strchr(char *s, char c)
 {
 	int i;
-	char *firstOcc;
+	char *firstOcc = NULL;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -22,11 +22,8 @@ char *_strchr(char *s, char c)
 		{
 			firstOcc = &s[i];
 			return (firstOcc);
+			break;
 		}
-		/*else
-		{
-			return (NULL);
-		}*/
 	}
 	return (NULL);
 }
