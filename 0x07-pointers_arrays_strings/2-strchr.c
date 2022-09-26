@@ -13,16 +13,17 @@
 
 char *_strchr(char *s, char c)
 {
-	int i;
-	char *firstOcc = NULL;
-
-	for (i = 0; s[i] != '\0'; i++)
+	while (*s != '\0')
 	{
-		if (s[i] == c)
+		if (*s == c)
 		{
-			firstOcc = &s[i];
-			return (firstOcc);
+			return (s);
 		}
+	s++;
 	}
-	return (firstOcc);
+	if (*s == c)
+	{
+		return (s);
+	}
+	return (0);
 }
