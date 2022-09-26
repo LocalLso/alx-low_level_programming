@@ -22,7 +22,6 @@ char *_strchr(char *s, char c)
 		{
 			firstOcc = &s[i];
 			return (firstOcc);
-			break;
 		}
 	}
 	return (NULL);
