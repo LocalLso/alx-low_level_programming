@@ -24,5 +24,5 @@ char *_strchr(char *s, char c)
 			return (firstOcc);
 		}
 	}
-	return (NULL);
+	return (firstOcc);
 }
