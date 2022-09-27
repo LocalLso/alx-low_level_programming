@@ -9,13 +9,13 @@
  * Return: s
  */
 
-unsigned int _strspn(char *s,char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	int i;
 	unsigned int length;
 
 	length = 0;
-	while (*s  != '\0')
+	while (*s != '\0')
 	{
 		for (i = 0; accept[i] != '\0'; i++)
 		{
