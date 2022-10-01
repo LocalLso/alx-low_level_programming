@@ -14,7 +14,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, mul ,count;
+	long int i, mul, count;
 
 	count = 0;
 	for (i = 1; i < argc; i++)
