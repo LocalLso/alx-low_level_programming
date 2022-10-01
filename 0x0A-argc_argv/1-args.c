@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	count = 0;
 	for (i = 1; i < argc; i++)
 	{
-		count += atoi(argv[i-1]);
+		count += atoi(argv[i - 1]);
 		count++;
 	}
 	printf("%d\n", count);
