@@ -22,14 +22,10 @@ int main(int argc, char *argv[])
 		count += atoi(argv[i - 1]);
 		count++;
 	}
-	if (count == 0)
+	if (count == 0 || count == 1)
 	{
 		printf("Error\n");
 		return (1);
-	}
-	else if (count > 3)
-	{
-		return (0);
 	}
 	mul = atoi(argv[1]) * atoi(argv[2]);
 	printf("%d\n", mul);
