@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * len - counts string lenght
- * @s2: pointer of char typy to print
+ * @s: pointer of char typy to print
  *
  * Return: lenth of s2.
  */
@@ -38,17 +38,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s1 == NULL)
 		s1 = ("");
-
 	if (s2 == NULL)
 		s2 = ("");
-
-
 	lens1 = len(s1);
 	lens2 = len(s2);
 	s1s2 = malloc(((sizeof(*s1s2) * lens1) + n) + 1);
 		if (s1s2 == NULL)
 			return (NULL);
-	
 	if (n > lens2 || n == lens2)
 	{
 		for (i = 0; s1[i] != '\0'; i++)
@@ -61,21 +57,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			i++;
 		}
 	}
-	else 
+	else
 	{
 		for (i = 0; s1[i] != '\0'; i++)
 		{
 			s1s2[i] = s1[i];
 		}
-		for (j = 0; s2[j] != '\0'; j++)
+		for (j = 0; j < n; j++)
 		{
-			if (s2[j] != s2[n])
-			{
-				s1s2[i] = s2[j];
-				i++;
-			}
+			s1s2[i] = s2[j];
+			i++;
 		}
-		return (s1s2);
 	}
 	s1s2[i] = '\0';
 	return (s1s2);
