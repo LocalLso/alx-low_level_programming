@@ -1,0 +1,34 @@
+#include <stdlib.h>
+#include "main.h"
+
+/**
+ * array_range - creates an array
+ * @min: integer to print
+ * @max: integer to print
+ *
+ * array_range - a function that creates an array of integers.
+ * Return: NULL.
+ */
+
+int *array_range(int min, int max)
+{
+	int *arr_rng;
+	int i;
+
+	if (min > max)
+	{
+		return (NULL);
+	}
+
+	arr_rng = malloc(sizeof(*arr_rng) * max);
+	if (arr_rng == NULL)
+	{
+		return (NULL);
+	}
+	for (i = 0; i < max; i++)
+	{
+		arr_rng[i] = min;
+		min++;
+	}
+	return (arr_rng);
+}
