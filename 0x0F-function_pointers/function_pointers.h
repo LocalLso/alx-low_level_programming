@@ -4,7 +4,12 @@
 
 /**
  * Definations and
- * function prototypes.
+ * _putchar - prints 1 char
+ * print_name - prints name
+ * f - prints name
+ * function prototypes
+ * @c: char to print
+ * Return: Always 0.
  */
 
 int _putchar(char c);

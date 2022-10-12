@@ -11,8 +11,9 @@
 void print_name(char *name, void (*f)(char *))
 /* pointer to function */
 {
-	if (f != NULL) /* if the function exist do it */
+	if (!name || != f)
 	{
-		f(name);
+		return;
 	}
+	f(name);
 }
