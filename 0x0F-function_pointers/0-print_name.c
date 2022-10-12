@@ -11,7 +11,7 @@
 void print_name(char *name, void (*f)(char *))
 /* pointer to function */
 {
-	if (!name || != f)
+	if (!name || !f)
 	{
 		return;
 	}
