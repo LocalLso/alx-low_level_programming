@@ -13,13 +13,10 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	void (*ff)(char *);
-	
-	ff = f;
-	if (!ff)
+	if (!f)
 	{
 		return;
 	}
 
-	ff(name);
+	f(name);
 }
