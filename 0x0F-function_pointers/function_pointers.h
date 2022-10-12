@@ -2,11 +2,10 @@
 #define FUNCTION_POINTERS_H_
 
 /**
- * Definations and
  * _putchar - prints 1 char
  * print_name - prints name
  * f - prints name
- * function prototypes
+ *
  * @c: char to print
  * Return: Always 0.
  */
