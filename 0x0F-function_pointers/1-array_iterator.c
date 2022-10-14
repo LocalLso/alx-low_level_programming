@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "function_pointers.h"
 /**
  * array_iterator - ftn that exe a fctn given as para on each array element
