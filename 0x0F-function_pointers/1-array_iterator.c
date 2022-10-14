@@ -1,20 +1,19 @@
 #include "function_pointers.h"
+
 /**
- * array_iterator - ftn that exe a fctn given as para on each array element
- * @array: array of pointers
- * @size: size of an array element
- * @action: pointer to the function you need to use
- * Return: void
- */
+  * array_iterator - function given as a parameter on each element of an array
+  * @array: array
+  * @size: size the array
+  * @action: funtion pointer
+  * Return: void
+  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	unsigned int i;
+	int j, k = size;
 
-	if (!action || !array || size < 1) /*if the function exist do it*/
-		return;
-
-	for (i = 0; i < size; i++) /*find the array size */
+	if (action != NULL && array != NULL)
 	{
-		action(array[i]); /*deferencing &printelement&hexa*/
+		for (j = 0; j < k; j++)
+		(*action)(array[j]);
 	}
 }
