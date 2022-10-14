@@ -4,6 +4,7 @@
 
 /**
  * print_all - prints anything
+ * @format: list of types of arguments passed to the functon
  *
  * print_all - a function that prints anything.
  */
