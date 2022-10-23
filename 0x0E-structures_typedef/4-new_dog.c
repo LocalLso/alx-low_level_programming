@@ -2,7 +2,7 @@
 #include "dog.h"
 
 /**
- * len - retunrs len
+ * len - counts len
  * @s: pointer to print
  * len - counts the lenght of the string
  *
