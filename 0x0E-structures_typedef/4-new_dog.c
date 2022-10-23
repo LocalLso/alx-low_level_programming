@@ -2,7 +2,7 @@
 #include "dog.h"
 
 /**
- * len - retunrs len
+ * len - retunrs len of string
  * @s: pointer to print
  * len - counts the lenght of the string
  *
@@ -27,7 +27,7 @@ int len(char *s)
  * @age: to print
  * @owner: pointer to print
  *
- * Return: Struct variable
+ * Return: Struct variable created
  */
 
 
