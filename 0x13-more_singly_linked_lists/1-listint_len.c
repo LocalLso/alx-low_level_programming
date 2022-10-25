@@ -5,6 +5,8 @@
  * @h: constant pointer of listint_t type
  *
  * listint_len -  returns the number of elements in a linked list.
+ *
+ * Return: Count
  */
 
 size_t listint_len(const listint_t *h)
