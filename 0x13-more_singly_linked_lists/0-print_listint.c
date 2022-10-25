@@ -15,8 +15,6 @@ size_t print_listint(const listint_t *h)
 	int count = 0;
 	const listint_t *mvptr = NULL;
 
-	if (h == NULL)
-		printf("The list is empty");
 	mvptr = h;
 	while (mvptr != NULL)
 	{
