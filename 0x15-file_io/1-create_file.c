@@ -39,7 +39,6 @@ int count(char *text_content)
 int create_file(const char *filename, char *text_content)
 {
 	int fd, len, w;
-	char *buff;
 
 	if (!filename)
 		return (-1);
@@ -51,15 +50,11 @@ int create_file(const char *filename, char *text_content)
 		text_content = "";
 
 	len = count(text_content);
-	buff = malloc(sizeof(char) * (len));
-	text_content = buff;
-	if (!buff)
-		return (-1);
-	w = write(fd, buff, len);
+	w = write(fd, text_content, len);
 	if (w == -1)
 		return (-1);
 
 	close(fd);
-	free(buff);
+
 	return (1);
 }
