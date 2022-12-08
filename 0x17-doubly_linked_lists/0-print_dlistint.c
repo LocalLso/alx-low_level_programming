@@ -7,6 +7,7 @@
  * @h: const pointer to take in
  *
  * print_dlistint - prints all elements of a list
+ * Return: Count.
  */
 
 size_t print_dlistint(const dlistint_t *h)
