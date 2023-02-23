@@ -1,0 +1,10 @@
+.PHONY: all school
+all: school
+
+CC = gcc
+SRC = main.c school.c
+OBJ = main.o school.o
+NAME = school
+
+school: $(SRC)
+	$(CC) -c $(SRC) -o $(NAME)
