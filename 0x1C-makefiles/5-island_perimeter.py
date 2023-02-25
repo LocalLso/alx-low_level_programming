@@ -23,4 +23,3 @@ def island_perimeter(grid: list) -> int:
                 bottom = 1 if i == rows - 1 or grid[i + 1][j] == 0 else 0
                 perimeter += (top + right + bottom + left)
     return perimeter
-
