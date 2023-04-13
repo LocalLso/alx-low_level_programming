@@ -19,7 +19,7 @@ void print_array(int *a, size_t l, size_t r);
 int binary_search_expo(int *array, size_t l, size_t r, int value);
 
 #ifndef min
-#define min(a,b)            (((a) < (b)) ? (a) : (b))
+#define min(a, b)            (((a) < (b)) ? (a) : (b))
 #endif
 
 #endif /* SEARCH_ALGOS_H */
