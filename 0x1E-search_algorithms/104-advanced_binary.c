@@ -1,52 +1,64 @@
 #include "search_algos.h"
 
 /**
- * advanced_binary - Calls function
- * @array: pointer to the first element of the array
- * @size: is the number of elements in array
- * @value: is the value to search for
- * Description: Function that searches for a value in an
- * array of integers using the Linear search algorithm.
- * Return: If value not present or if array is NULL return -1,
- * else return first index where value is located.
+ * find - searches for a value in an array of
+ * integers using the Binary search algorithm
+ *
+ *
+ * @array: input array
+ * @size: size of the array
+ * @value: value to search in
+ * Return: index of the number
  */
-
-int advanced_binary(int *array, size_t size, int value)
+int find(int *array, size_t size, int value)
 {
-	size_t l = 0;
-	size_t r = size - 1;
-	size_t m;
+	size_t half = size / 2;
+	size_t i;
 
-	if (!array)
+	if (array == NULL || size == 0)
 		return (-1);
-	if (r >= l)
+
+	printf("Searching in array");
+
+	for (i = 0; i < size; i++)
+		printf("%s %d", (i == 0) ? ":" : ",", array[i]);
+
+	printf("\n");
+
+	if (half && size % 2 == 0)
+		half--;
+
+	if (value == array[half])
 	{
-		print_array(array, l, r);
-		m = l + (r - l) / 2;
-		if (array[m] == value)
-			return (m);
-		if (array[m] > value)
-			return (advanced_binary(array, m + 1, value));
+		if (half > 0)
+			return (find(array, half + 1, value));
+		return ((int)half);
 	}
-	return (-1);
+
+	if (value < array[half])
+		return (find(array, half + 1, value));
+
+	half++;
+	return (find(array + half, size - half, value) + half);
 }
 
 /**
- * print_array - Calls function
- * @a: Array to be printed
- * @l: Left most element in array
- * @r: Right most element in array
- * Description: Helper function used to print arrays
- * during a search algorithm
- * Return: None
+ * advanced_binary - calls to rec_search to return
+ * the index of the number
+ *
+ * @array: input array
+ * @size: size of the array
+ * @value: value to search in
+ * Return: index of the number
  */
-
-void print_array(int *a, size_t l, size_t r)
+int advanced_binary(int *array, size_t size, int value)
 {
-	size_t i;
+	int index;
 
-	printf("Searching in array: ");
-	for (i = l; i < r; i++)
-		printf("%d, ", a[i]);
-	printf("%d\n", a[i]);
+	index = find(array, size, value);
+
+	if (index >= 0 && array[index] != value)
+		return (-1);
+
+	return (index);
 }
